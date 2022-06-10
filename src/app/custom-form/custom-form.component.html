@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center align-item-center">
+  <form [formGroup]="loginForm" (ngSubmit)="submitLoginForm()">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" formControlName="email" placeholder="name@example.com"/>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="password" placeholder="password"/>
+    </div>
+    <div class="mb-3">
+      <label for="confPassword" class="form-label">Confirm Password</label>
+      <input type="password" class="form-control" id="confPassword" formControlName="confirmPassword" placeholder="Confirm Password"/>
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
