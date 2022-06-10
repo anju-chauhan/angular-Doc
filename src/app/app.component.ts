@@ -8,7 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'data';
   data = 10;
+  formData = [];
   updateMy(){
     this.data= Math.floor(Math.random()*10)
+  }
+
+  getUserValue(value){
+    console.warn(value)
+
+  }
+
+  getFormData($event: any) {
+    this.formData = $event;
   }
 }
